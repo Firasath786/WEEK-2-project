@@ -1,0 +1,5 @@
+SELECT c.category_id, c.name AS category_name, fc.film_id
+FROM category c
+JOIN film_category fc ON c.category_id = fc.category_id
+
+

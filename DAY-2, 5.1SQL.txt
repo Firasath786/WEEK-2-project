@@ -1,0 +1,5 @@
+SELECT first_name
+FROM staff
+WHERE staff.first_name = SOME (
+    SELECT first_name
+    FROM actor);
